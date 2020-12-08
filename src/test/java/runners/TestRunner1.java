@@ -8,7 +8,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 plugin = {"json:target/cucumber.json"},
 
-tags={"@Add_to_cart,@Successful_login"})
+tags={"@Successful_login"})
 
 public class TestRunner1 extends AbstractTestNGCucumberTests {
 
