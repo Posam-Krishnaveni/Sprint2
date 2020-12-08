@@ -1,0 +1,165 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "User has already logged in with valid credentials and is navigated to Demo workshop home page.",
+        "description": "",
+        "type": "background",
+        "keyword": "Background"
+      },
+      {
+        "line": 5,
+        "name": "− Successful adding an item to the cart",
+        "description": "Description: This feature will test successful Add to cart functionality",
+        "id": "add-to-cart--action;−-successful-adding-an-item-to-the-cart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 35445024600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on home page",
+            "match": {
+              "location": "AddtoCartSteps.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 947995500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks on books link",
+            "match": {
+              "location": "AddtoCartSteps.user_clicks_on_books_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3197065500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "selects a book to add to cart",
+            "match": {
+              "location": "AddtoCartSteps.selects_a_book_to_add_to_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92295000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click on Add to cart",
+            "match": {
+              "location": "AddtoCartSteps.click_on_Add_to_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3099266500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "item is added to cart successfully",
+            "match": {
+              "location": "AddtoCartSteps.item_is_added_to_cart_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Add_to_cart"
+          }
+        ]
+      }
+    ],
+    "name": "Add to cart  Action",
+    "description": "",
+    "id": "add-to-cart--action",
+    "keyword": "Feature",
+    "uri": "add_to_cart99.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "User navigates to Demo Web Shop home page and click on Register link",
+        "description": "",
+        "type": "background",
+        "keyword": "Background"
+      },
+      {
+        "line": 4,
+        "name": "Successful registration with valid credentials",
+        "description": "Description: This feature will test successful registration functionality",
+        "id": "registration;successful-registration-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10931630400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on registration page",
+            "match": {
+              "location": "RegisterSteps.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2747569300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters all valid data in their fields",
+            "match": {
+              "location": "RegisterSteps.user_enters_all_valid_data_in_their_fields()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3464996200,
+              "error_message": "java.lang.NullPointerException\r\n\tat stepDefinitions.RegisterSteps.message_displayed_Register_Successful(RegisterSteps.java:48)\r\n\tat ✽.Then message displayed Register Successful(register01.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "message displayed Register Successful",
+            "match": {
+              "location": "RegisterSteps.message_displayed_Register_Successful()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Successful_Registration"
+          }
+        ]
+      }
+    ],
+    "name": "Registration",
+    "description": "",
+    "id": "registration",
+    "keyword": "Feature",
+    "uri": "register01.feature"
+  }
+]

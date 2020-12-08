@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27626" started-at="2020-12-08T07:06:54Z" finished-at="2020-12-08T07:07:22Z">
+  <suite name="Default suite" duration-ms="60550" started-at="2020-12-08T10:13:10Z" finished-at="2020-12-08T10:14:10Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.TestRunner1@6108b2d7]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="27626" started-at="2020-12-08T07:06:54Z" finished-at="2020-12-08T07:07:22Z">
+    <test name="Default test" duration-ms="60550" started-at="2020-12-08T10:13:10Z" finished-at="2020-12-08T10:14:10Z">
       <class name="runners.TestRunner1">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.TestRunner1@6108b2d7]" name="setUpClass" is-config="true" duration-ms="465" started-at="2020-12-08T12:36:54Z" finished-at="2020-12-08T12:36:55Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.TestRunner1@6108b2d7]" name="setUpClass" is-config="true" duration-ms="460" started-at="2020-12-08T15:43:10Z" finished-at="2020-12-08T15:43:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.TestRunner1@6108b2d7]" name="feature" duration-ms="26741" started-at="2020-12-08T12:36:55Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-12-08T12:37:22Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.TestRunner1@6108b2d7]" name="feature" duration-ms="42802" started-at="2020-12-08T15:43:10Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-12-08T15:43:53Z">
           <params>
             <param index="0">
               <value>
@@ -25,7 +25,56 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.TestRunner1@6108b2d7]" name="tearDownClass" is-config="true" duration-ms="257" started-at="2020-12-08T12:37:22Z" finished-at="2020-12-08T12:37:22Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.TestRunner1@6108b2d7]" name="feature" duration-ms="17148" started-at="2020-12-08T15:43:53Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-12-08T15:44:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Registration]]>
+              </value>
+            </param>
+          </params>
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.NullPointerException
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:663)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:849)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1157)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1200)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1125)
+	at org.testng.TestNG.run(TestNG.java:1033)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: java.lang.NullPointerException
+	at stepDefinitions.RegisterSteps.message_displayed_Register_Successful(RegisterSteps.java:48)
+	at ?.Then message displayed Register Successful(register01.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.TestRunner1@6108b2d7]" name="tearDownClass" is-config="true" duration-ms="19" started-at="2020-12-08T15:44:10Z" finished-at="2020-12-08T15:44:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
