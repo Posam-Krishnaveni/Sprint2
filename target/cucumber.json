@@ -19,7 +19,7 @@
         "steps": [
           {
             "result": {
-              "duration": 35445024600,
+              "duration": 29118563900,
               "status": "passed"
             },
             "line": 7,
@@ -31,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 947995500,
+              "duration": 1740044700,
               "status": "passed"
             },
             "line": 8,
@@ -43,7 +43,7 @@
           },
           {
             "result": {
-              "duration": 3197065500,
+              "duration": 3074621100,
               "status": "passed"
             },
             "line": 9,
@@ -55,7 +55,7 @@
           },
           {
             "result": {
-              "duration": 92295000,
+              "duration": 68168100,
               "status": "passed"
             },
             "line": 10,
@@ -67,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 3099266500,
+              "duration": 3096306100,
               "status": "passed"
             },
             "line": 11,
@@ -97,69 +97,80 @@
     "elements": [
       {
         "line": 2,
-        "name": "User navigates to Demo Web Shop home page and click on Register link",
+        "name": "User navigates to Demo Web Shop home page and click on Login link",
         "description": "",
         "type": "background",
         "keyword": "Background"
       },
       {
-        "line": 4,
-        "name": "Successful registration with valid credentials",
-        "description": "Description: This feature will test successful registration functionality",
-        "id": "registration;successful-registration-with-valid-credentials",
+        "line": 5,
+        "name": "− Successful login with valid login credentials",
+        "description": "Description: This feature will test successful login functionality",
+        "id": "login-action;−-successful-login-with-valid-login-credentials",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 10931630400,
+              "duration": 35375257000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "user is on registration page",
+            "line": 7,
+            "name": "User is on login page",
             "match": {
-              "location": "RegisterSteps.user_is_on_registration_page()"
+              "location": "LoginSteps.user_is_on_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2747569300,
+              "duration": 2189323100,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user enters all valid data in their fields",
+            "line": 8,
+            "name": "User enters all valid data",
             "match": {
-              "location": "RegisterSteps.user_enters_all_valid_data_in_their_fields()"
+              "location": "LoginSteps.user_enters_all_valid_data()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3464996200,
-              "error_message": "java.lang.NullPointerException\r\n\tat stepDefinitions.RegisterSteps.message_displayed_Register_Successful(RegisterSteps.java:48)\r\n\tat ✽.Then message displayed Register Successful(register01.feature:8)\r\n",
-              "status": "failed"
+              "duration": 995714600,
+              "status": "passed"
             },
-            "line": 8,
-            "name": "message displayed Register Successful",
+            "line": 9,
+            "name": "click on Log in",
             "match": {
-              "location": "RegisterSteps.message_displayed_Register_Successful()"
+              "location": "LoginSteps.click_on_Log_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57206300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "login should be successful",
+            "match": {
+              "location": "LoginSteps.login_should_be_successful()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 3,
-            "name": "@Successful_Registration"
+            "line": 4,
+            "name": "@Successful_login"
           }
         ]
       }
     ],
-    "name": "Registration",
+    "name": "Login Action",
     "description": "",
-    "id": "registration",
+    "id": "login-action",
     "keyword": "Feature",
-    "uri": "register01.feature"
+    "uri": "login02.feature"
   }
 ]
